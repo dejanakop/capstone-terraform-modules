@@ -1,6 +1,9 @@
 # VPC
 variable "vpc_name" { type = string }
-variable "auto_create_subnetworks" { type = bool }
+variable "auto_create_subnetworks" {
+  type    = bool
+  default = false
+}
 
 # SUBNET
 variable "subnet_name" { type = string }
